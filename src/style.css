@@ -1,0 +1,214 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-div {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-div {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.child-div figure img {
+  width: 25rem;
+  height: 6rem;
+}
+
+.child-div figure figcaption {
+  color: #000;
+  font-size: 3rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.addItems{
+  position: relative;
+  width: 400px;
+  margin-top: 30px;
+}
+.inpt {
+  padding: 1.2rem 1rem;
+  
+  width: 90%;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px gray;
+
+}
+.addItemsbtn,.editItemsbtn{
+  color: #007fff;
+  font-size: 25px;
+
+  position: absolute;
+  cursor: pointer;
+  right: 25px;
+  top: 50%;
+  transform: translate(0,-50%);
+  
+
+}
+.addItemsbtn:hover,.editItemsbtn:hover{
+  color: #000;
+}
+
+
+.red{
+  background-color: red;
+  color: #fff;
+}
+
+/*  Please Subscribe to ThapaTechnical Youtube Channel
+/* Click Here: https://www.youtube.com/thapatechnical  */
+
+.todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa {
+  margin-left: -3.5rem;
+  /* padding-top:  1rem; */
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  background-color: #fff;
+  background-image: none;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 3rem;
+}
+.fa:hover {
+  color: #007fff;
+}
+
+
+
+.showItems {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.eachItem {
+  background: #fff;
+  margin-left: 20px;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  width: 360px;
+  word-break: break-word;
+  background: #007fff;
+  border: 1px solid #007fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eachItem:hover {
+  background: rgb(249, 249, 252);
+  color: rgb(85, 41, 220);
+}
+
+.showItems .eachItem h3 {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.fa-trash-alt,
+.fa-edit {
+  /* margin-left: -2.5rem; */
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  color: rgb(251, 251, 251);
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 2rem;
+}
+
+/* .addItems .fa-edit {
+  color: rgb(47, 214, 122);
+}
+
+.fa-edit {
+  margin-left: -3.5rem;
+} */
+
+
+
+/*  Please Subscribe to ThapaTechnical Youtube Channel
+/* Click Here: https://www.youtube.com/thapatechnical  */
+
+.eachItem:hover .fa-trash-alt {
+  color: rgb(214, 47, 61);
+}
+
+.eachItem:hover .fa-edit {
+  color: #007fff;
+}
+
+.eachItem:hover h3 {
+  color: #007fff;
+}
+.eachItem:hover{
+  border: 1px solid black;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .inpt {
+    width: 300px;
+  }
+  .eachItem{
+    width: 300px;
+margin-left: 50px;
+  }
+  .addItemsbtn,.editItemsbtn{
+    
+    right: 55px;
+    
+  
+  }
+}
